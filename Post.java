@@ -74,20 +74,17 @@ public class Post
         info += username + "\n=====================\n" + "Posted: ";
         info += timeString(time);
         info += "_____________________\nLikes: " + likes + "\n=====================\n\n";
-        if(comments.size() != 0){
-            for(int i=0; i<comments.size(); i++){
-                info += comments.get(i) + "\n_____________________\n";
-            }
-        }
-        else{
-            info += "Sin comentarios";
-        }
         System.out.println(info);
     
     }
     
     public String getAuthor(){
         return username;
+    }
+    
+    public ArrayList getComments()
+    {
+        return comments;
     }
 }
     

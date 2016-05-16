@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=author\ nombreGrupo
+comment0.target=JoinGroupPost(java.lang.String,\ java.lang.String)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ JoinGroupPost\r\n
+numComments=1

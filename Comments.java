@@ -1,33 +1,29 @@
-
+import java.util.ArrayList;
 /**
  * Write a description of class Comments here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Comments
+public class Comments extends Post
 {
     // instance variables - replace the example below with your own
     private int x;
-
+    private ArrayList<String> comments;
     /**
      * Constructor for objects of class Comments
      */
-    public Comments()
+    public Comments(String author)
     {
         // initialise instance variables
-        x = 0;
+        super(author);
+        comments = new ArrayList<>();
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
+     * Metodo para añadir un comentario al post
      */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public void addComment(String text){
+        comments.add(text);
     }
 }

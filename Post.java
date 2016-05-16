@@ -39,13 +39,6 @@ public class Post
         }
     }
     
-      /**
-     * Metodo para añadir un comentario al post
-     */
-    public void addComment(String text){
-        comments.add(text);
-    }
-    
     
     /**
      * Metodo que devuelve la estampa de tiempo en el momento de crear el post
@@ -74,6 +67,7 @@ public class Post
         info += username + "\n=====================\n" + "Posted: ";
         info += timeString(time);
         info += "_____________________\nLikes: " + likes + "\n=====================\n\n";
+        
         System.out.println(info);
     
     }
@@ -81,10 +75,6 @@ public class Post
     public String getAuthor(){
         return username;
     }
-    
-    public ArrayList getComments()
-    {
-        return comments;
-    }
 }
-    
+
+   

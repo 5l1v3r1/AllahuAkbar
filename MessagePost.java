@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class MessagePost extends Post
+public class MessagePost extends Comments
 {
     
     private String message;
@@ -37,12 +37,7 @@ public class MessagePost extends Post
         System.out.println("Esto es un post de texto creado por " + getAuthor());
     }
     
-       /**
-     * Metodo para añadir un comentario al post
-     */
-    public void addComment(String text){
-        getComments().add(text);
-    }
+     
     
 }
 

@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class PhotoPost extends Post
+public class PhotoPost extends Comments
 {
     
     private String filename;
@@ -41,11 +41,6 @@ public class PhotoPost extends Post
         return caption;
     }
     
-       /**
-     * Metodo para añadir un comentario al post
-     */
-    public void addComment(String text){
-        getComments().add(text);
-    }
+  
 
 }
